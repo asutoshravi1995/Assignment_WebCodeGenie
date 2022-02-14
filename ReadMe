@@ -1,0 +1,55 @@
+This Program set up DataBase with below mentioned data and once requested gives the compounded result.
+
+Prerequisites : mongodb , node js
+
+Steps to start.
+    1. run command 'npm install' to install all dependency 
+    2. start mongodb server
+    3. run command 'node ./src/test' to start the server 
+    4. call http://localhost:3000/ from browser to get result 
+
+
+DataBase Data:
+[{
+    title: "Vivo X50",
+    category: "mobile",
+    amount: 35000
+
+},
+{
+    title: "Samsung M32",
+    category: "mobile",
+    amount: 18000
+
+},
+{
+    title: "Lenovo 15E253",
+    category: "laptop",
+    amount: 85000
+
+},
+{
+    title: "Dell XPS 15R",
+    category: "laptop",
+    amount: 115000
+}]
+
+
+
+
+Expected Ouput:
+
+
+
+
+
+[{
+    category: "mobile",
+    qty: 2,
+    totalAmount: 53000
+},
+{
+    category: "laptop",
+    qty: 2,
+    totalAmount: 200000
+}]
